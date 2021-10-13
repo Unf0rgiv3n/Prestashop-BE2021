@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+    mysql:
+        image: mysql:5.7
+        container_name: presta-db
+        environment:
+            MYSQL_DATABASE: prestashop
+            MYSQL_ROOT_PASSWORD: admin
+        ports:
+            - 3307:3306
+        networks:
+            - presta-net
+    
+    prestashop:
+        image: prestashop/prestashop
+        container_name: presta
+        environment:
+            DB_SERVER: mysql
+        ports:
+            - 8080:80
+            - 443:443
+        networks:
+            - presta-net
+
+networks:
+    presta-net:
