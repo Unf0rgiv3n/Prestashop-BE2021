@@ -22,6 +22,8 @@ następnie, żeby odpalić sklep:
 
 ```bash start_shop.sh```
 
+w przeglądarce łączymy się z http://localhost:8080
+
 żeby bezpiecznie wyłączyć sklep i zapisać dump bazy danych:
 
 ```bash stop_shop.sh```
