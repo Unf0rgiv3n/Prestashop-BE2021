@@ -11,17 +11,32 @@ services:
             - 3307:3306
         networks:
             - presta-net
+        volumes:
+            - ./mysql-db:/docker-entrypoint-initdb.d/
     
     prestashop:
-        image: prestashop/prestashop
+        depends_on:
+            - mysql
+        build: .
         container_name: presta
         environment:
             DB_SERVER: mysql
         ports:
             - 8080:80
             - 443:443
+        environment:
+            - PS_DEV_MODE=1
+            - DB_SERVER=mysql
+            - DB_USER=root
+            - DB_PASSWD=admin
+            - DB_NAME=prestashop
+            - PS_INSTALL_AUTO=0
         networks:
             - presta-net
-
+        volumes:
+            - ./src:/var/www/html
 networks:
     presta-net:
+
+volumes:
+    presta_vol:

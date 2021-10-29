@@ -174,3 +174,8 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
+
+# OURS
+
+#./mysql-db/*
+src/var/cache/*
