@@ -1730,7 +1730,7 @@ CREATE TABLE `ps_connections` (
   KEY `id_guest` (`id_guest`),
   KEY `date_add` (`date_add`),
   KEY `id_page` (`id_page`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1739,7 +1739,7 @@ CREATE TABLE `ps_connections` (
 
 LOCK TABLES `ps_connections` WRITE;
 /*!40000 ALTER TABLE `ps_connections` DISABLE KEYS */;
-INSERT INTO `ps_connections` VALUES (1,1,1,1,1,2130706433,'2021-10-24 16:59:34','https://www.prestashop.com'),(2,1,1,3,1,2886860801,'2021-10-24 17:00:48','http://localhost:8080/install/index.php'),(3,1,1,3,1,2886860801,'2021-10-29 23:01:51','');
+INSERT INTO `ps_connections` VALUES (1,1,1,1,1,2130706433,'2021-10-24 16:59:34','https://www.prestashop.com'),(2,1,1,3,1,2886860801,'2021-10-24 17:00:48','http://localhost:8080/install/index.php'),(3,1,1,3,1,2886860801,'2021-10-29 23:01:51',''),(4,1,1,3,1,2886860801,'2021-10-30 10:29:33','');
 /*!40000 ALTER TABLE `ps_connections` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1787,7 +1787,7 @@ CREATE TABLE `ps_connections_source` (
   KEY `orderby` (`date_add`),
   KEY `http_referer` (`http_referer`),
   KEY `request_uri` (`request_uri`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1796,7 +1796,7 @@ CREATE TABLE `ps_connections_source` (
 
 LOCK TABLES `ps_connections_source` WRITE;
 /*!40000 ALTER TABLE `ps_connections_source` DISABLE KEYS */;
-INSERT INTO `ps_connections_source` VALUES (1,2,'http://localhost:8080/install/index.php','localhost:8080/index.php','','2021-10-24 17:00:48'),(2,2,'http://localhost:8080/index.php','localhost:8080/index.php?id_category=3&controller=category&id_lang=1','','2021-10-24 17:11:47');
+INSERT INTO `ps_connections_source` VALUES (1,2,'http://localhost:8080/install/index.php','localhost:8080/index.php','','2021-10-24 17:00:48'),(2,2,'http://localhost:8080/index.php','localhost:8080/index.php?id_category=3&controller=category&id_lang=1','','2021-10-24 17:11:47'),(3,4,'http://localhost:8080/index.php','localhost:8080/index.php?id_lang=2','','2021-10-30 10:29:51'),(4,4,'http://localhost:8080/index.php?id_lang=2','localhost:8080/index.php?id_cms=3&controller=cms&id_lang=2','','2021-10-30 10:30:27'),(5,4,'http://localhost:8080/index.php?id_cms=3&controller=cms&id_lang=2','localhost:8080/index.php','','2021-10-30 10:30:33'),(6,4,'http://localhost:8080/index.php','localhost:8080/index.php?controller=authentication&back=my-account','','2021-10-30 10:30:40'),(7,4,'http://localhost:8080/index.php?controller=authentication&back=my-account','localhost:8080/index.php?controller=authentication&back=my-account','','2021-10-30 10:30:45');
 /*!40000 ALTER TABLE `ps_connections_source` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8180,4 +8180,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-29 21:11:08
+-- Dump completed on 2021-10-30  8:32:33
