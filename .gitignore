@@ -177,5 +177,5 @@ nb-configuration.xml
 
 # OURS
 
-mysql-db/
+./mysql-db/*
 src/var/cache/
