@@ -1,0 +1,15 @@
+f2aa46,172.18.0.1,GET,http://localhost:8080/admin-cinema/index.php/configure/advanced/performance/?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043373,,200
+a84984,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043374,,200
+2f9dab,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636043374329,1636043374,,200
+c7f4b9,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043494,,200
+49ee2e,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636043494785,1636043494,,200
+f92da2,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043615,,200
+158ee1,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636043615066,1636043615,,200
+3157c6,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043735,,200
+713892,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636043735303,1636043735,,200
+f71ee8,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043855,,200
+f06420,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636043855556,1636043855,,200
+22c52a,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636043975,,200
+113e0a,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636043975769,1636043975,,200
+1622cf,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU,1636044096,,200
+5d37f6,172.18.0.1,POST,http://localhost:8080/admin-cinema/index.php/common/notifications?_token=SfOUnLqARvTFo3YEX5C-xq9JGf3amjlgqNR4TKaF7nU&rand=1636044096005,1636044096,,200
