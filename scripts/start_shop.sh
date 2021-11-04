@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo 'Booting up prestashop in detached mode...'
-docker-compose up -d --build
+docker-compose up -d
 
 echo 'Progress:'
 BAR='##############################'
