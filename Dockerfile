@@ -1,5 +1,6 @@
 FROM prestashop/prestashop:1.7
 
-RUN chown -R www-data:www-data /var/www/html
-RUN find . -type f -exec chmod 644 -- {} +
-RUN find . -type d -exec chmod 755 -- {} +
+COPY ./entrypoint-script/entrypoint.sh /var/www/entrypoint.sh
+RUN chmod 755 /var/www/entrypoint.sh
+
+CMD ["/bin/sh", "/var/www/entrypoint.sh"]
