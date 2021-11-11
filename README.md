@@ -1,4 +1,4 @@
-# INSTRUKCJA ODPALENIA
+git# INSTRUKCJA ODPALENIA
 
 1. Klonujemy repo do siebie na lokalną maszynę
 
@@ -28,10 +28,24 @@ w przeglądarce łączymy się z http://localhost:8080
 
 ```bash stop_shop.sh```
 
+żeby wyłączyć bez dumpa wpisujemy
+
+```docker-compose down```
+
 
 # WAŻNE INFO
 
-W repo na gicie będzie się znajdować "startowy" dump bazy danych, ale dodaje w .gitignore flagę, która, będzie pomijać wasz lokalny dump - wrzucanie tego na repo mija się z celem, bo co chwila i tak będą konflikty, a jak powstanie skrypt scrapera to wszyscy będa mieli i tak z grubsza to samo.
+W repo na gicie będzie się znajdować "startowy" dump bazy danych, ale dodaje w .gitignore flagę, która, będzie pomijać wasz lokalny dump. 
+
+PRZED WRZUCENIEM ZMIAN USUWAMY STARY DUMP KOMENDĄ 
+
+```git rm --cached mysql-db/databasedump.sql```
+
+i potem dodajemy nasz nowy dump
+
+```git add mysql-db/databasedump.sql -f```
+
+musimy użyć forcea, bo domyślnie jest git ignore
 
 ## WORKFLOW
 
