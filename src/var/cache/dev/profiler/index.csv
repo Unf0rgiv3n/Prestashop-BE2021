@@ -62,3 +62,4 @@ dbff32,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notific
 fd1e5e,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE,1636748258,,200
 4ca36b,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE&rand=1636748296126,1636748296,,200
 506705,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE,1636748297,,200
+ee0ffe,192.168.128.1,GET,https://localhost/admin-cinema/index.php/configure/shop/seo-urls/?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE,1636753371,,302

@@ -7,6 +7,8 @@ RUN mkdir /var/www/ssl
 COPY ./scripts/ssl/000-default.conf /var/www/ssl/000-default.conf
 COPY ./scripts/ssl/default-ssl.conf /var/www/ssl/default-ssl.conf
 COPY ./scripts/ssl/create-ssl.sh /var/www/ssl/create-ssl.sh
+COPY ./scripts/ssl/ssl-bestcinema-selfsigned.crt /var/www/ssl/ssl-bestcinema-selfsigned.crt
+COPY ./scripts/ssl/ssl-bestcinema-selfsigned.key /var/www/ssl/ssl-bestcinema-selfsigned.key
 RUN chmod 755 /var/www/ssl/create-ssl.sh
 RUN chmod 755 /var/www/ssl/000-default.conf
 RUN chmod 755 /var/www/ssl/default-ssl.conf

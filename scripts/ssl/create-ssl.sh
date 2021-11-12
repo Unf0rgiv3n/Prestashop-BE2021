@@ -7,14 +7,7 @@
 #openssl req -new -out website.csr -sha256 -key myCA.key
 #openssl x509 -req -in website.csr -days 365 -signkey myCA.key
 
-openssl req -newkey rsa:4096 \
-            -x509 \
-            -sha256 \
-            -days 3650 \
-            -nodes \
-            -out ./ssl-bestcinema-selfsigned.crt \
-            -keyout ./ssl-bestcinema-selfsigned.key \
-            -subj "/C=PL/ST=Pomerania/L=Gdansk/O=Politechnika Gdanska/OU=./CN=."
+#openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out ./ssl-bestcinema-selfsigned.crt -keyout ./ssl-bestcinema-selfsigned.key -subj "/C=PL/ST=Pomerania/L=Gdansk/O=Politechnika Gdanska/OU=./CN=."
 
 rm -rf /etc/apache2/sites-available/default-ssl.conf
 rm -rf /etc/apache2/sites-available/000-default.conf
