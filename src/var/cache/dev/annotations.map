@@ -199,4 +199,9 @@
   199 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleRecommendedController',
   200 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ModuleSelectionController',
   201 => 'PrestaShop\\Module\\Mbo\\Controller\\Admin\\ThemeCatalogController',
+  202 => 'PrestaShop\\Module\\PsAccounts\\Controller\\AbstractRestChildController',
+  203 => 'PrestaShop\\Module\\PsAccounts\\Controller\\AbstractRestController',
+  204 => 'PrestaShop\\Module\\PsAccounts\\Controller\\AbstractShopRestController',
+  205 => 'PrestaShop\\Module\\PsAccounts\\Controller\\RestControllerInterface',
+  206 => 'PrestaShop\\Module\\PsEventbus\\Controller\\AbstractApiController',
 );
