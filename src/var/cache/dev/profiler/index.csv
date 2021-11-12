@@ -63,3 +63,11 @@ fd1e5e,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notific
 4ca36b,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE&rand=1636748296126,1636748296,,200
 506705,192.168.80.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE,1636748297,,200
 ee0ffe,192.168.128.1,GET,https://localhost/admin-cinema/index.php/configure/shop/seo-urls/?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE,1636753371,,302
+f13cfe,192.168.144.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A&rand=1636754209973,1636754211,,200
+6d2235,192.168.144.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A&rand=1636754211271,1636754212,,200
+615c20,192.168.144.1,GET,https://localhost/admin-cinema/index.php/configure/advanced/performance/?_token=dnHPMd-jYJFffn-hLeCGrXXjiVR-guwt_m2wFrrCDBE,1636754326,,302
+7cbecf,192.168.144.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A&rand=1636754332370,1636754332,,200
+23c799,192.168.144.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A&rand=1636754332817,1636754333,,200
+653ebc,192.168.144.1,GET,https://localhost/admin-cinema/index.php/configure/advanced/performance/?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A,1636754348,,200
+667b01,192.168.144.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A,1636754350,,200
+cef166,192.168.144.1,POST,https://localhost/admin-cinema/index.php/common/notifications?_token=xG9BP5Yt0QEj5ZksNr9oowGvZUDc8z9stC-3wfb9V1A&rand=1636754350556,1636754351,,200
