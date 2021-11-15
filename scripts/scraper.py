@@ -34,7 +34,7 @@ def download_image(poster_url, path):
 
 
 file_path = "multikino.csv"
-photos_path = "../`assets"
+photos_path = "../assets"
 
 
 s = requests.Session()
