@@ -15,6 +15,7 @@ def get_netto_price(price):
     return price / 1.23
 
 
+
 file_path = "../assets/multikino.csv"
 
 
