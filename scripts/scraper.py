@@ -1,24 +1,7 @@
 import requests
 from datetime import datetime
-from threading import Thread
-from queue import Queue
 import csv
 import os
-
-
-class DownloadWorker(Thread):
-    def __init__(self, queue):
-        Thread.__init__(self)
-        self.queue = queue
-
-    def run(self):
-        while True:
-            # Get the work from the queue and expand the tuple
-            directory, link = self.queue.get()
-            try:
-                download_image(link, directory)
-            finally:
-                self.queue.task_done()
 
 
 def get_price_for_film(film_json):
@@ -28,13 +11,11 @@ def get_price_for_film(film_json):
     return 16.90
 
 
-def download_image(poster_url, path):
-    with open(path, 'wb') as handler:
-        handler.write(requests.get(poster_url).content)
+def get_netto_price(price):
+    return price / 1.23
 
 
-file_path = "multikino.csv"
-photos_path = "../assets"
+file_path = "../assets/multikino.csv"
 
 
 s = requests.Session()
@@ -45,29 +26,13 @@ content = s.get(url).json()
 
 films = content["WhatsOnAlphabeticFilms"]
 rows = []
-film_urls = []
 for film in films:
-    divided = film["Poster"].split("/")
-    poster_name = divided[len(divided) - 1]
-    poster_path = os.path.join(photos_path, poster_name)
-    rows.append([film["Title"], str(film["Synopsis"] or ""), str(get_price_for_film(film)).replace(".", ","), poster_path])
-    film_urls.append(film["Poster"])
+    price = get_price_for_film(film) 
+    net_price = get_netto_price(price)
+    rows.append([film["Title"], str(film["Synopsis"] or ""), str(price).replace(".", ","), str(round(net_price, 2)).replace(".", ","), film["Poster"]])
 
-queue = Queue()
-# Create 8 worker threads
-for x in range(8):
-    worker = DownloadWorker(queue)
-    # Setting daemon to True will let the main thread exit even though the workers are blocking
-    worker.daemon = True
-    worker.start()
-# Put the tasks into the queue as a tuple
-for i, u in enumerate(film_urls):
-    if not os.path.isfile(rows[i][3]):
-        queue.put((rows[i][3], u))
-# Causes the main thread to wait for the queue to finish processing all the tasks
-queue.join()
+header = ['Name', 'Description', 'Price tax included', 'Price tax excluded', 'Image URLs']
 
-header = ['Name', 'Description', 'Base price', 'Image URLs']
 with open(file_path, 'w', encoding='UTF8') as f:
     writer = csv.writer(f, delimiter='|')
     writer.writerow(header)
