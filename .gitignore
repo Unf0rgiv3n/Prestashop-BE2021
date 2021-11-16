@@ -179,4 +179,4 @@ nb-configuration.xml
 
 #mysql-db/*
 ./src/var/cache/*
-./assets/multikino.csv
+assets/multikino.csv
