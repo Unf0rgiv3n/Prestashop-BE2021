@@ -1,15 +1,11 @@
-{shop_url}
-
-Hi {firstname} {lastname},
-
-Thanks for your order.
-
-We are pleased to offer you a discount of {amount}% off your next order. And this offer is valid for {days} days, so do not wait any longer!
-
-Here is your VOUCHER CODE: {voucher_num}
-
-Enter this code in your shopping cart to get the discount.
-
 [{shop_name}]({shop_url})
+Witaj {firstname} {lastname},
+Dziękujemy za złożenie zamówienia w {shop_name}.
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+W ramach podziękowania, chcemy dać Ci {amount}% rabatu na następne zamówienie! Ta oferta jest ważna przez {days} dni, więc nie trać czasu!
+
+Oto Twój kupon: {voucher_num}
+
+Wprowadź ten kod w koszyku, aby uzyskać rabat.
+
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

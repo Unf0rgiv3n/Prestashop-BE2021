@@ -1,10 +1,7 @@
-{shop_url}
+[{shop_name}]({shop_url})
+Witaj,
 
-Hi,
-
-Thank you for subscribing to our newsletter. Please click on the following link to confirm your request:
+Dziękujemy za zapisanie się do naszego newslettera, prosimy o potwierdzenie aktywacji klikając na poniższy link:
 {verif_url}
 
-[{shop_name}]({shop_url})
-
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

@@ -1,18 +1,14 @@
-{shop_url}
+[{shop_name}]({shop_url})
+Witaj {firstname} {lastname},
 
-Hi {firstname} {lastname},
+Twoje konto gościa w {shop_name} zostało przekształcone w konto klienta.
 
-Your guest account has been turned into a customer account
+Adres e-mail: {email}
 
-Congratulations, your guest account for {shop_name} has been turned into a customer account!
-
-Email address: {email}
-
-Click on the following link to set up your password:
+Kliknij w poniższy link aby ustalić swoje hasło:
 {url}
 
-You can access your customer account on our shop: [{shop_name}]({shop_url})
+Należy zachować ostrożność podczas udostępniania innym tych danych do logowania.
+Możesz uzyskać dostęp do konta klienta w naszym sklepie: {shop_url}
 
-[{shop_name}]({shop_url})
-
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
