@@ -13,4 +13,5 @@ echo "127.0.0.1 localhost.localdomain localhost $(hostname)" >> /etc/hosts
 service sendmail start
 
 /bin/sh /var/www/ssl/create-ssl.sh
+
 /bin/sh /tmp/docker_run.sh
