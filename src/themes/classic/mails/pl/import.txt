@@ -1,11 +1,6 @@
-{shop_url}
-
-Hi {firstname} {lastname},
-
-Import finished
-
-The file {filename} has been successfully imported to your shop.
-
 [{shop_name}]({shop_url})
+Witaj {firstname} {lastname},
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+Twój plik {filename} został poprawnie zaimportowany do Twojego sklepu.
+
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

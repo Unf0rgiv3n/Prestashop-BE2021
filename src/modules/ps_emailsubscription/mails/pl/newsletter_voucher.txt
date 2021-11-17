@@ -1,11 +1,6 @@
-{shop_url}
-
-Hi,
-
-Subscribing to newsletter
-
-Thank you for subscribing to our newsletter. We are pleased to offer you the following voucher: {discount}
-
 [{shop_name}]({shop_url})
+Witaj,
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+Jeśli chodzi o subskrypcję biuletynu, mamy przyjemność zaoferować Państwu następujące kupony: {discount}
+
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

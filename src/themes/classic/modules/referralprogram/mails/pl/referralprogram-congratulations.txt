@@ -1,13 +1,10 @@
-{shop_url}
-
-Congratulations!
-
-Your referred friend {sponsored_firstname} {sponsored_lastname} has placed his/her first order on [{shop_name}]({shop_url})!
-
-We are pleased to offer you a voucher worth {discount_display} (VOUCHER # {discount_name}) that you can use on your next order.
-
-Best regards,
-
 [{shop_name}]({shop_url})
+Gratulacje!
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+Twój polecony przyjaciel {sponsored_firstname} {sponsored_lastname} złożył swoje pierwsze zamówienie na [{shop_name}]({shop_url})!
+
+Z przyjemnością oferujemy Ci kupon o wartości {discount_display} (kupon # {discount_name}), którego możesz użyć przy następnym zamówieniu.
+
+Z poważaniem,
+
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

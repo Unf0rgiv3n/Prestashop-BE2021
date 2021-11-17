@@ -1,17 +1,12 @@
-{shop_url}
-
-Hi {firstname} {lastname},
-
-Your message has been sent successfully, thank you for taking the time to write!
-
-Order ID #:  {order_name}
-
-Product:  {product_name}
-
-Attached file: {attached_file}
-
-We will reply as soon as possible.
-
 [{shop_name}]({shop_url})
+Twoja wiadomość do Obsługi sklepu {shop_name}
 
-Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
+Twoja wiadomość została wysłana pomyślnie.
+
+Nr zamówienia: {order_name}
+Produkt: {product_name}
+Załączony plik: {attached_file}
+
+Postaramy się odpowiedzieć tak szybko jak to możliwe.
+
+[{shop_name}]({shop_url}) obsługiwany przez [PrestaShop ™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
