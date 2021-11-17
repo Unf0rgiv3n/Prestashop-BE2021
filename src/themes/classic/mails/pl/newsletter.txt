@@ -1,6 +1,6 @@
 {shop_url}
 
-Hi {firstname} {lastname},
+Witaj {firstname} {lastname},
 
 {message}
 
