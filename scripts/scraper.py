@@ -22,7 +22,7 @@ rows_category = []
 
 rows_category.append(["Repertuar", 1, 'Sprawdź repertuar na poszczególne dni'])
 
-for i in range(2):
+for i in range(3):
 
     day=(datetime.datetime.today()+ datetime.timedelta(days=i)).strftime('%d-%m-%Y')
     s = requests.Session()
