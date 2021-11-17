@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime
+import datetime
 import csv
 import os
 
@@ -15,26 +15,41 @@ def get_netto_price(price):
     return price / 1.23
 
 
-file_path = "../assets/multikino.csv"
-
-
-s = requests.Session()
-url = "https://multikino.pl/api/sitecore/WhatsOn/WhatsOnV2Alphabetic?cinemaId=4&data=" + datetime.today().strftime(
-    '%d-%m-%Y') + "&type=teraz-gramy"
-
-content = s.get(url).json()
-
-films = content["WhatsOnAlphabeticFilms"]
+file_path_film = "../assets/multikino.csv"
+file_path_category = "../assets/multikino_category.csv"
 rows = []
-for film in films:
-    price = get_price_for_film(film) 
-    net_price = get_netto_price(price)
-    rows.append([film["Title"], str(film["Synopsis"] or ""), str(price).replace(".", ","), str(round(net_price, 2)).replace(".", ","), film["Poster"]])
+rows_category = []
 
-header = ['Name', 'Description', 'Price tax included', 'Price tax excluded', 'Image URLs']
+rows_category.append(["Repertuar", 1, 'Sprawdź repertuar na poszczególne dni'])
 
-with open(file_path, 'w', encoding='UTF8') as f:
+for i in range(2):
+
+    day=(datetime.datetime.today()+ datetime.timedelta(days=i)).strftime('%d-%m-%Y')
+    s = requests.Session()
+    url = "https://multikino.pl/api/sitecore/WhatsOn/WhatsOnV2Alphabetic?cinemaId=4&data=" + day + "&type=teraz-gramy"
+
+    content = s.get(url).json()
+
+    films = content["WhatsOnAlphabeticFilms"]
+    for film in films:
+        price = get_price_for_film(film)
+        net_price = get_netto_price(price)
+        rows.append([film["Title"], str(film["Synopsis"] or ""), str(price).replace(".", ","), str(round(net_price, 2)).replace(".", ","), film["Poster"],day,1,
+                     film["ReleaseDate"][:10],100])
+
+    header = ['Name', 'Description', 'Price tax included', 'Price tax excluded', 'Image URLs','Categories','Tax rule','Product creation date','Quantity']
+
+
+    header_category = ['Name', 'Active','Description','Parent Category']
+    rows_category.append([day,1,"Filmy grane w dniu "+day,'Repertuar'])
+
+with open(file_path_film, 'w', encoding='UTF8') as f:
     writer = csv.writer(f, delimiter='|')
     writer.writerow(header)
     writer.writerows(rows)
+
+with open(file_path_category, 'w', encoding='UTF8') as f:
+    writer = csv.writer(f, delimiter='|')
+    writer.writerow(header_category)
+    writer.writerows(rows_category)
 
