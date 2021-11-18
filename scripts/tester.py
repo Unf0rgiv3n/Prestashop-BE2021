@@ -14,7 +14,7 @@ browser.implicitly_wait(20)
 browser.get('https://localhost/pl/')
 numbers = ["1", "2", "3", "1", "2", "3", "1", "2", "3", "6"]
 
-for i in range(1):
+for i in range(7):
 	element_to_hover_over = browser.find_element(By.ID, "category-3")
 	hover = ActionChains(browser).move_to_element(element_to_hover_over)
 	hover.perform()
@@ -33,7 +33,7 @@ for i in range(1):
 	ActionChains(browser).move_to_element(navigate2).click().pause(1).perform()
 	
 	
-for i in range(1):
+for i in range(3):
 	element_to_hover_over = browser.find_element(By.ID, "category-3")
 	hover = ActionChains(browser).move_to_element(element_to_hover_over)
 	hover.perform()
