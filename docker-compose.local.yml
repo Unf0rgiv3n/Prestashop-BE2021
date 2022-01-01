@@ -20,8 +20,6 @@ services:
             - mysql
         build: .
         container_name: presta
-        environment:
-            DB_SERVER: mysql
         ports:
             - 8080:80
             - 443:443
@@ -34,10 +32,5 @@ services:
             - PS_INSTALL_AUTO=0
         networks:
             - presta-net
-        volumes:
-            - ./src:/var/www/html
 networks:
     presta-net:
-
-volumes:
-    presta_vol:

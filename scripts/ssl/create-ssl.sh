@@ -9,6 +9,8 @@
 
 #openssl req -newkey rsa:4096 -x509 -sha256 -days 3650 -nodes -out ./ssl-bestcinema-selfsigned.crt -keyout ./ssl-bestcinema-selfsigned.key -subj "/C=PL/ST=Pomerania/L=Gdansk/O=Politechnika Gdanska/OU=./CN=localhost"
 
+echo 'jestesmy w create-ssl'
+
 rm -rf /etc/apache2/sites-available/default-ssl.conf
 rm -rf /etc/apache2/sites-available/000-default.conf
 cp /var/www/ssl/000-default.conf /etc/apache2/sites-available/000-default.conf
@@ -27,6 +29,8 @@ a2enconf ssl-params
 apache2ctl configtest
 
 sed -i 's|;openssl.cafile=|openssl.cafile=/etc/ssl/certs/ssl-bestcinema-selfsigned.crt|g' /usr/local/etc/php/php.ini
+
+echo 'jestesmy przed reloadem apache2'
 
 service apache2 reload
 
