@@ -18,7 +18,7 @@ cp /var/www/ssl/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
 cp /var/www/ssl/ssl-bestcinema-selfsigned.crt /etc/ssl/certs/ssl-bestcinema-selfsigned.crt
 cp /var/www/ssl/ssl-bestcinema-selfsigned.key /etc/ssl/private/ssl-bestcinema-selfsigned.key
 
-echo "ServerName localhost:8080" | tee /etc/apache2/conf-available/servername.conf
+echo "ServerName localhost" | tee /etc/apache2/conf-available/servername.conf
 a2enconf servername
 
 a2enmod ssl

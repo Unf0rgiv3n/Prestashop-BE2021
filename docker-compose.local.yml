@@ -21,15 +21,17 @@ services:
         build: .
         container_name: presta
         ports:
-            - 8080:80
+            - 80:80
             - 443:443
         environment:
-            - PS_DEV_MODE=1
-            - DB_SERVER=mysql
-            - DB_USER=root
-            - DB_PASSWD=admin
-            - DB_NAME=prestashop
-            - PS_INSTALL_AUTO=0
+            PS_DEV_MODE: 1
+            DB_SERVER: mysql
+            DB_USER: root
+            DB_PASSWD: admin
+            DB_NAME: prestashop
+            PS_INSTALL_AUTO: 0
+            PS_DOMAIN: localhost:80
+            PS_FOLDER_ADMIN: admin
         networks:
             - presta-net
 networks:
