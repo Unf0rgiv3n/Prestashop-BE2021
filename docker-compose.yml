@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    be_176023_presta:
+        image: unf0rgiv33n/prestashop_be2022:final
+        ports:
+            - 76023:80
+            - 76022:443
+        restart: always
+        environment:
+            PS_INSTALL_AUTO: 0
+            PS_ERASE_DB: 0
+            DB_SERVER: actina15.maas
+            DB_USER: BE_176023
+            DB_PASSWD: password
+            DB_NAME: BE_176023
+            PS_DOMAIN: localhost:76023
+            PS_DOMAIN_SSL: localhost:76022
+            PS_FOLDER_ADMIN: admin-cinema
