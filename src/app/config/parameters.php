@@ -1,11 +1,11 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => 'mysql',
-    'database_port' => '',
-    'database_name' => 'prestashop',
-    'database_user' => 'root',
-    'database_password' => 'admin',
+    'database_host' => 'actina15.maas',
+    'database_port' => '3306',
+    'database_name' => 'BE_176023',
+    'database_user' => 'BE_176023',
+    'database_password' => 'password',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',
@@ -16,7 +16,7 @@
     'ps_caching' => 'CacheMemcache',
     'ps_cache_enable' => false,
     'ps_creation_date' => '2021-10-24',
-    'locale' => 'en-US',
+    'locale' => 'pl-PL',
     'use_debug_toolbar' => true,
     'cookie_key' => 'CYMEVarDAHKtLIQqK23s0wdhOAKsIrSnvsRyTsknyENsEIU3Oj4AZbSvF9UuXnEp',
     'cookie_iv' => '42AQYOXDnyycwUEaMSAOiocphsxgHxjY',
