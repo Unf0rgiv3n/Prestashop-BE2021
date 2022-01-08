@@ -2,7 +2,7 @@ version: '3'
 
 services:
     be_176023_presta:
-        image: unf0rgiv33n/prestashop_be2022:final
+        image: unf0rgiv33n/prestashop_be2022
         ports:
             - 76023:80
             - 76022:443
@@ -17,3 +17,7 @@ services:
             PS_DOMAIN: localhost:76023
             PS_DOMAIN_SSL: localhost:76022
             PS_FOLDER_ADMIN: admin-cinema
+networks:
+  admin-mysql_default:
+    external:
+      name: admin-mysql_default
