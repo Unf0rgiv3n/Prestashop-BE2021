@@ -2,7 +2,7 @@ version: '3'
 
 services:
     be_176023_presta:
-        image: unf0rgiv33n/prestashop_be2022
+        image: unf0rgiv33n/be_176023
         ports:
             - 76023:80
             - 76022:443
