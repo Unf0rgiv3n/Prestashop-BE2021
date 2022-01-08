@@ -2,11 +2,10 @@ version: '3'
 
 services:
     be_176023_presta:
-        image: unf0rgiv33n/be_176023
+        image: unf0rgiv33n/be_176023:latest
         ports:
-            - 76023:80
-            - 76022:443
-        restart: always
+            - 6023:80
+            - 6022:443
         environment:
             PS_INSTALL_AUTO: 0
             PS_ERASE_DB: 0
