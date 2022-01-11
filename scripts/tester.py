@@ -11,7 +11,7 @@ import sys
 browser = webdriver.Firefox(executable_path=sys.argv[1])
 browser.accept_untrusted_certs = True
 browser.implicitly_wait(20)
-browser.get('https://localhost/pl/')
+browser.get('https://localhost:6022/pl/')
 numbers = ["1", "2", "3", "1", "2", "3", "1", "2", "3", "6"]
 
 for i in range(7):

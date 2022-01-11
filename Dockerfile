@@ -2,7 +2,7 @@ FROM prestashop/prestashop:1.7
 
 RUN rm -rf /var/www/html
 COPY ./src .
-RUN chmod -R 755 .
+RUN chmod -R 777 .
 
 COPY ./scripts/entrypoint.sh /var/www/entrypoint.sh
 RUN chmod 755 /var/www/entrypoint.sh

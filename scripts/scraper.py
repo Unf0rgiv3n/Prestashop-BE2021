@@ -8,7 +8,7 @@ def get_price_for_film(film_json):
     for tag in film_json["PromoLabels"]["names"]:
         if tag["name"] == "SUPERHIT":
             return 19.90
-    return 16.90
+    return 19.90
 
 
 def get_netto_price(price):
